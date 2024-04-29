@@ -27,7 +27,7 @@ export default function Categories() {
     <div className="bg-secondary-color">
       <div className="max-w-6xl mx-auto px-4 pb-11 mt-10">
         <div className="pt-8 mb-10">
-          <Title title="Serving Categories" />
+          <Title text="Serving Categories" />
         </div>
         <Swiper
           slidesPerView={1}
