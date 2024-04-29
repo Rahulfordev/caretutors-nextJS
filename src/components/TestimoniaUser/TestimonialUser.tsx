@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -9,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-import { FaArrowRight, FaQuoteLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 import user1 from "../../../public/assets/testimonial_user_image/01.jpeg";
 import user2 from "../../../public/assets/testimonial_user_image/02.jpeg";
