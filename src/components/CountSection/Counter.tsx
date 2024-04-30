@@ -64,9 +64,9 @@ const Counter = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row flex-wrap justify-center  items-center px-12 pb-6 text-white">
+          <div className="flex flex-col gap-2 lg:flex-row flex-wrap justify-center  items-center px-0 md:px-4 pb-6 text-white">
             <div className="flex-auto w-30">Live Tuition Jobs</div>
-            <div className="flex-auto w-80">
+            <div className="flex-auto w-full lg:w-80">
               <>
                 <Swiper
                   rewind={true}
