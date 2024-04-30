@@ -9,33 +9,23 @@ import tutor03 from "../../../public/assets/forTutor/tutor03.png";
 import tutor04 from "../../../public/assets/forTutor/tutor04.png";
 import tutor05 from "../../../public/assets/forTutor/tutor05.png";
 import Title from "../common/Title/Title";
-import { off } from "process";
 
 const Howitswork: React.FC = () => {
   const elementRef = useRef<HTMLDivElement>(null);
-  const elementRef1 = useRef<HTMLDivElement>(null);
+  const elementRef2 = useRef<HTMLDivElement>(null);
   const elementRef3 = useRef<HTMLDivElement>(null);
-  const [offset, setOffset] = useState<string>("0px"); 
-  const [offset2, setOffset2] = useState<string>("0px"); 
-  const [offset3, setOffset3] = useState<string>("0px"); 
+  const [offset, setOffset] = useState<string>("363px");
+
+  const [offset2, setOffset2] = useState<string>("363px");
+  const [offset3, setOffset3] = useState<string>("363px");
 
   useEffect(() => {
     const handleScroll = () => {
       if (
-        elementRef3.current &&
-        elementRef3.current.getBoundingClientRect().y < 370
-      ) {
-        setOffset3(`${elementRef3.current.getBoundingClientRect().y}px`); // Convert to string
-      } else if (
-        elementRef1.current &&
-        elementRef1.current.getBoundingClientRect().y < 375
-      ) {
-        setOffset2(`${elementRef1.current.getBoundingClientRect().y}px`); // Convert to string
-      } else if (
         elementRef.current &&
-        elementRef.current.getBoundingClientRect().y < 380
+        elementRef.current.getBoundingClientRect().y < 363
       ) {
-        setOffset(`${elementRef.current.getBoundingClientRect().y}px`); // Convert to string
+        setOffset(`${elementRef.current.getBoundingClientRect().y}px`);
       }
     };
 
@@ -46,8 +36,36 @@ const Howitswork: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log(offset3);
-  }, [offset3]);
+    const handleScroll2 = () => {
+      if (
+        elementRef2.current &&
+        elementRef2.current.getBoundingClientRect().y < 363
+      ) {
+        setOffset2(`${elementRef2.current.getBoundingClientRect().y}px`);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll2);
+    return () => {
+      document.removeEventListener("scroll", handleScroll2);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll3 = () => {
+      if (
+        elementRef3.current &&
+        elementRef3.current.getBoundingClientRect().y < 363
+      ) {
+        setOffset3(`${elementRef3.current.getBoundingClientRect().y}px`);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll3);
+    return () => {
+      document.removeEventListener("scroll", handleScroll3);
+    };
+  }, []);
 
   return (
     <div className="bg-secondary-color">
@@ -85,7 +103,7 @@ const Howitswork: React.FC = () => {
             </div>
           </div>
           <div
-            ref={elementRef1}
+            ref={elementRef2}
             className="w-[100%] md:w-[55%] p-4 rounded-xl flex border-color gap-6 items-center  mb-[3.2rem] relative md:ml-auto"
           >
             <Image src={tutor02} alt="tutor01" />
