@@ -7,6 +7,7 @@ import TuitionTypes from "@/components/TuitionTypes/TuitionTypes";
 import Footer from "@/components/common/Footer/Footer";
 import NavBar from "@/components/common/NavBar/NavBar";
 import Featured from "@/components/featured/Featured";
+import Howitswork from "@/components/howitswork/Howitswork";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Counter />
       <TuitionTypes />
       <Categories />
+      <Howitswork />
       <TestimonialUser />
       <AllTutors />
       <Featured />

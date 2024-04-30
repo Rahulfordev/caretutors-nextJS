@@ -23,7 +23,7 @@ const TestimonialUser = () => {
     <div className="mt-4 mb-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto">
-          <Title text="What Some Awesome Tutor Says about Us" />
+          <Title title="What Some Awesome Tutor Says about Us" />
           <p className="text-center py-2">Become a tutor and start earning!</p>
           <button className="flex items-center gap-2 mx-auto button px-4 py-1 text-sm md:px-6 md:py-2">
             Become a Tutor <FaArrowRight />

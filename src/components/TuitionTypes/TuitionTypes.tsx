@@ -12,7 +12,7 @@ const TuitionTypes = () => {
     <section className="bg-secondary-color">
       <div className="max-w-7xl mx-auto px-4 pb-16">
         <div className="pb-10 pt-5">
-          <Title text="Tuition Types" />
+          <Title title="Tuition Types" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex items-center gap-6 bordercursor-pointer transition-all duration-300 ease-in-out border-color rounded-lg p-4 hover:bg-white">

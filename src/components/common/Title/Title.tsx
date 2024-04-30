@@ -1,13 +1,11 @@
 import React from "react";
 
-interface ButtonProps {
-  text: string;
+interface TitleProps {
+  title: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text }) => {
-  return (
-    <button className="button px-4 py-1 text-sm md:px-6 md:py-2">{text}</button>
-  );
+const Title: React.FC<TitleProps> = ({ title }) => {
+  return <div className="text-center text-3xl font-semibold">{title}</div>;
 };
 
-export default Button;
+export default Title;

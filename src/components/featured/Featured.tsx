@@ -27,7 +27,7 @@ export default function Featured() {
   return (
     <div className="max-w-7xl mx-auto px-4 mb-10 mt-10">
       <div className="mb-4 md:mb-3">
-        <Title text="We were featured on" />
+        <Title title="We were featured on" />
       </div>
       <Swiper
         slidesPerView={1}
